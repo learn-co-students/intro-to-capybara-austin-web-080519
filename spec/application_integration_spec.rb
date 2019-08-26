@@ -1,4 +1,5 @@
 require 'spec_helper'
+Rack::Builder.parse_file('config.ru').first
 
 describe "GET '/' - Greeting Form" do
   # Code from previous example
